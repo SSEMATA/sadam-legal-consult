@@ -27,25 +27,30 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="logo.png" alt="Sadam Legal Consult Logo" class="logo" />
-      </a>
-    </div>
-    <h1>Sadam Legal Consult</h1>
-    <p>Your Anchor in Times of Uncertainty</p>
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
+<header class="header-container">
+  <div class="logo">
+    <a href="index.html"><img src="logo.png" alt="Sadam Legal Consult Logo" /></a>
+  </div>
+
+  <nav class="header-right" id="navMenu">
+    <ul>
+      <li><a href="#hero" class="active" onclick="closeMenu()">Home</a></li>
+      <li><a href="#services" onclick="closeMenu()">Services</a></li>
+      <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+      <li><a href="#blogs" onclick="closeMenu()">Blogs</a></li>
+      <li><a href="#constitution" onclick="closeMenu()">Constitution</a></li>
+    </ul>
+      <div class="phone-number">
+    📞 <a href="tel:+256787312507">+256 787312507</a>
+  </div>
     <div class="header-action">
-      <a href="https://forms.gle/Bz1MnxuAyQnaT8rz7" class="btn">Book Consultation</a>
+      <a href="#contact" class="btn gold-btn" onclick="closeMenu()">Book Consultation</a>
     </div>
-  </header>
+  </nav>
+
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
 
   <main>
     <!-- Hero Section -->
@@ -138,4 +143,30 @@
     <p>© 2025 Sadam Legal Consult. All rights reserved.</p>
   </footer>
 </body>
+<script>
+    const navMenu = document.getElementById("navMenu");
+    const hamburger = document.getElementById("hamburger");
+
+    function toggleMenu() {
+      navMenu.classList.toggle("show");
+      hamburger.style.display = navMenu.classList.contains("show") ? "none" : "block";
+    }
+
+    function closeMenu() {
+      navMenu.classList.remove("show");
+      hamburger.style.display = "block";
+    }
+
+    // Close menu if clicking outside navMenu when open
+    document.addEventListener("click", (e) => {
+      if (
+        navMenu.classList.contains("show") &&
+        !navMenu.contains(e.target) &&
+        e.target !== hamburger
+      ) {
+        closeMenu();
+      }
+    });
+  </script>
+
 </html>
