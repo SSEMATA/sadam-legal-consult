@@ -186,7 +186,7 @@ body {
 
   .header-right.show {
     left: 5px;
-    top: 1px;
+    top: 10px;
     height: 400px;
     border-radius: 6px;
   }
