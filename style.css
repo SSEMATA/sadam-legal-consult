@@ -143,12 +143,18 @@ body {
     color: #fff;
     border-radius: 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin: 10px 20px;
+    margin: 10px 5px;
   }
-.header-container .phone-number {
-    font-weight: 500;
-    color: white;
-  }
+.phone-number {
+  color: white;
+  font-weight: 500;
+}
+
+.phone-number a {
+  color: white;
+  text-decoration: none;
+}
+
   .header-left {
     flex-direction: row;
     align-items: center;
