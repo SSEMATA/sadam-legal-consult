@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sadam Legal Consult</title>
 
@@ -29,7 +30,7 @@
 <body>
 <header class="header-container">
   <div class="logo">
-    <a href="index.html"><img src="logo.png" alt="Sadam Legal Consult Logo" /></a>
+    <a href="index.html"><img src="logo1.jpg" alt="Sadam Legal Consult Logo" /></a>
   </div>
 
   <nav class="header-right" id="navMenu">
@@ -102,21 +103,53 @@
 
 
     <!-- FAQs -->
-    <section id="faq">
-      <h2>Frequently Asked Questions</h2>
-      <details>
-        <summary>How can I book a consultation?</summary>
-        <p>Click the “Book Consultation” button and fill out our secure form.</p>
-      </details>
-      <details>
-        <summary>Do you offer free advice?</summary>
-        <p>We provide short guidance and refer you to firms offering free initial consultations.</p>
-      </details>
-      <details>
-        <summary>Can I get help with criminal cases?</summary>
-        <p>Yes—our specialty is criminal defense, backed by expert legal professionals.</p>
-      </details>
-    </section>
+    <section class="faq-section">
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">What services does Sadam Legal Consult offer?</button>
+      <div class="faq-answer">
+        <p>We offer legal consultation, contract drafting, dispute resolution, land and property law support, and business legal advisory services.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How can I book a consultation?</button>
+      <div class="faq-answer">
+        <p>You can contact us via our website, email, or phone. We will confirm availability via a phone call or WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What are your consultation fees?</button>
+      <div class="faq-answer">
+        <p>Our fees depend on the type and complexity of the case. However, the first consultation is often offered at a discounted rate.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I get legal help online?</button>
+      <div class="faq-answer">
+        <p>Yes. We offer virtual consultations through Zoom or WhatsApp. You can receive expert advice without visiting our office.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Where is Sadam Legal Consult located?</button>
+      <div class="faq-answer">
+        <p>We are located in Fort Portal, Uganda. However, we also serve clients from other regions remotely.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you offer support for land and property issues?</button>
+      <div class="faq-answer">
+        <p>Yes. We specialize in land verification, title processing, land sales agreements, and resolving land disputes legally and fairly.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Constitution Download -->
     <section id="constitution">
@@ -124,28 +157,104 @@
       <a href="uganda-constitution.pdf" class="btn" download>Download PDF</a>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blogs">
-      <h2>Insights & Legal Updates</h2>
-      <article>
-        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Courtroom scene" />
-        <h3>Understanding Criminal Defense in Uganda</h3>
-        <p>Your rights, how charges work, and what to expect in the Ugandan legal system.</p>
-        <a href="#">Read More</a>
-      </article>
-      <article>
-        <img src="https://images.pexels.com/photos/4427432/pexels-photo-4427432.jpeg" alt="Business legal documentation" />
-        <h3>Legal Advice for Small Business Owners</h3>
-        <p>Tips for protecting your venture and avoiding common legal issues in Uganda.</p>
-        <a href="#">Read More</a>
-      </article>
-    </section>
-  </main>
+  <section class="legal-insights">
+  <div class="insights-container">
+    <h2>Insights & Legal Updates</h2>
+
+    <!-- Insight 1 -->
+    <div class="insight-card">
+      <h3>Land Ownership in Uganda</h3>
+      <p>
+        Uganda's Land Act (Cap 227) recognizes four land tenure systems:
+        Customary, Freehold, Mailo, and Leasehold.
+        <span class="more-text">
+          <br><br>
+          📌 <strong>Customary Tenure:</strong> Based on traditional practices, not formally registered, but now eligible for certificates of customary ownership.<br>
+          📌 <strong>Freehold Tenure:</strong> Allows full rights to use and dispose of land. Owners can obtain freehold titles.<br>
+          📌 <strong>Mailo Tenure:</strong> Unique to Uganda, often includes overlapping rights of landowners and lawful occupants ("bibanja holders").<br>
+          📌 <strong>Leasehold:</strong> Land is leased for a fixed period (often 49 or 99 years), with specified terms and conditions.
+        </span>
+        <button class="toggle-btn">Read More</button>
+      </p>
+    </div>
+
+    <!-- Insight 2 -->
+    <div class="insight-card">
+      <h3>Marriage Rights in Uganda</h3>
+      <p>
+        The Marriage Act (Cap 251) recognizes four main types of marriage: Civil, Customary, Christian, and Islamic.
+        <span class="more-text">
+          <br><br>
+          ✅ <strong>Civil Marriage:</strong> Conducted by the Registrar of Marriages. Monogamous and governed by statutory law.<br>
+          ✅ <strong>Customary Marriage:</strong> Based on traditions of specific communities. Must be registered for legal protection.<br>
+          ✅ <strong>Christian Marriage:</strong> Must occur in a licensed church and registered under the law.<br>
+          ✅ <strong>Islamic Marriage:</strong> Governed by Sharia and recognized when registered.<br><br>
+          All legally recognized marriages protect property, inheritance, and spousal rights, especially when registered.
+        </span>
+        <button class="toggle-btn">Read More</button>
+      </p>
+    </div>
+
+    <!-- Insight 3 -->
+    <div class="insight-card">
+      <h3>Tenants’ Rights in Uganda</h3>
+      <p>
+        Under the Landlord and Tenant Act, 2022, both landlords and tenants have protected legal rights.
+        <span class="more-text">
+          <br><br>
+          🏠 <strong>Tenants:</strong> Have the right to written tenancy agreements, privacy, timely repairs, and protection from unlawful eviction.<br>
+          🛑 <strong>Landlords:</strong> Must give 60-day notice for rent increase, cannot evict without court process, and must provide habitable conditions.<br><br>
+          Security deposit handling, rent receipts, and dispute resolution through the tribunal are all outlined in the Act.
+        </span>
+        <button class="toggle-btn">Read More</button>
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 Sadam Legal Consult. All rights reserved.</p>
-  </footer>
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-column">
+      <h4>Sadam Legal Consult</h4>
+      <p>Your anchor in times of uncertainty. We provide trusted legal solutions to individuals, businesses, and communities in Uganda.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#insights">Legal Updates</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact Info</h4>
+      <ul>
+        <li>📞 +256 700 000 000</li>
+        <li>📧 info@sadamlegalconsult.com</li>
+        <li>📍 Fort Portal, Uganda</li>
+      </ul>
+    </div>
+<h4>Follow Us</h4>
+<div class="social-icons">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Sadam Legal Consult. All Rights Reserved.</p>
+  </div>
+</footer>
+
 </body>
 <script>
     const navMenu = document.getElementById("navMenu");
@@ -172,5 +281,34 @@
       }
     });
   </script>
+<script>
+  const faqButtons = document.querySelectorAll('.faq-question');
+
+  faqButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+
+      // Close all other answers
+      document.querySelectorAll('.faq-answer').forEach(a => {
+        if (a !== answer) a.style.display = 'none';
+      });
+
+      // Toggle current answer
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+  toggleButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const moreText = btn.previousElementSibling;
+      const isVisible = moreText.style.display === 'inline';
+
+      moreText.style.display = isVisible ? 'none' : 'inline';
+      btn.textContent = isVisible ? 'Read More' : 'Show Less';
+    });
+  });
+</script>
 
 </html>
